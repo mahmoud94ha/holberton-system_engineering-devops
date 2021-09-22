@@ -1,0 +1,1 @@
+you can use script 0-current_working_director to print the current directory 
