@@ -1,0 +1,5 @@
+#/bin/bin
+sudo apt -y update
+sudo apt -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo service start nginx
