@@ -2,7 +2,7 @@
 # Installation for ip
 sudo apt-get update
 sudo apt-get -y install haproxy
-config="frontend web-frontend\n\tbind *:80\n\tmode http\n\tdefault_backend web-backend\n\nbackend web-backend\n\tbalance roundrobin\n\tmode http\n\toption forwardfor\n\tserver 3247-web-01.mahmoudhannani.tech:80 check\n\tserver 3247-web-02.mahmoudhannani.tech:80 check\n"
+config="frontend web-frontend\n\tbind *:80\n\tmode http\n\tdefault_backend web-backend\n\nbackend web-backend\n\tbalance roundrobin\n\tmode http\n\toption forwardfor\n\tserver 3247-web-01 34.138.179.6:80 check\n\tserver 3247-web-02 52.73.64.247:80 check\n"
 echo -e $config | tee -a /etc/haproxy/haproxy.cfg
 sudo service haproxy reload
 sudo service haproxy restart
