@@ -2,3 +2,4 @@
 
 domain = $1;
 
+echo "The subdomain [SUB_DOMAIN] is a [RECORD_TYPE] record and points to [DESTINATION]"
